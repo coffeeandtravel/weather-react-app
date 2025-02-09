@@ -86,7 +86,7 @@ function App() {
       <div className="h-screen w-screen">
         {/* Navbar */}
         <div className="flex justify-center">
-          <div className="h-12 lg:h-16 w-50 lg:w-300 navbar items-center justify-between flex flex-row rounded-full mt-7">
+          <div className="h-16 w-50 lg:w-300 navbar items-center justify-between flex flex-row rounded-full mt-7">
             <a className="items-center flex flex-row" href="#">
               <img src={Cloud} alt="" className=" ml-5 mx-2" />
               <h1 className="text-2xl mx-2 text-white" href="#">
@@ -114,7 +114,7 @@ function App() {
                   key={weatherIcon}
                   src={weatherIcon}
                   alt={weatherData.name}
-                  className="h-48 w-48  mt-5"
+                  className="h-48 w-48 mt-2 lg:mt-5"
                   initial={{ x: "100vw", opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: "-100vw", opacity: 0 }}
