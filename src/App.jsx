@@ -105,7 +105,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-18 lg:mt-10 ">
+        <div className="flex justify-center mt-10 lg:mt-10 ">
           {/* <img src={Sun} alt="" className="h-48 w-48 " /> */}
           {weatherData ? (
             <>
