@@ -13,8 +13,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Hover from "./assets/Hover";
 import SearchIcon from "./assets/Search.svg"
 
-const API_KEY = import.meta.env.VITE_API_KEY
-console.log(API_KEY);
+const API_KEY = import.meta.env.VITE_API_KEY;
+console.log(VITE_API_KEY);
 function App() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
