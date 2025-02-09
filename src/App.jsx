@@ -14,17 +14,23 @@ import Hover from "./assets/Hover";
 import SearchIcon from "./assets/Search.svg"
 
 const API_KEY = import.meta.env.VITE_API_KEY;
-console.log(VITE_API_KEY);
+console.log(API_KEY);
+
+
 function App() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [weatherIcon, setWeatherIcon] = useState(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+
   useEffect(() => {
     if (weatherData && weatherData.name) {
       document.title = `Weather - ${weatherData.name}`;
     }
   }, [weatherData]);
+
+
   const handleChange = (event) => {
     setCity(event.target.value);
   };
@@ -34,8 +40,8 @@ function App() {
       try {
         const geoResponse = await fetch(
             `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
-          // `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=API_KEY=${API_KEY}`
         );
+
         const geoData = await geoResponse.json();
         if (geoData.length === 0) {
           console.log("City not found enter a valid city!");
