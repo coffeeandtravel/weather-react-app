@@ -86,7 +86,7 @@ function App() {
       <div className="h-screen w-screen">
         {/* Navbar */}
         <div className="flex justify-center">
-          <div className="h-16 w-90 lg:w-300 navbar items-center justify-between flex flex-row rounded-full mt-7">
+          <div className="h-16 w-[80%] lg:w-300 navbar items-center justify-between flex flex-row rounded-full mt-7">
             <a className="items-center flex flex-row" href="#">
               <img src={Cloud} alt="" className=" ml-5 mx-2" />
               <h1 className="text-2xl mx-2 text-white" href="#">
@@ -123,7 +123,7 @@ function App() {
               </AnimatePresence>
             </>
           ) : (
-            <h2 className="text-white text-5xl sm:pl-5 mt-60  mb-20 flex items-center sm:align:left align-center justify-center h-full">
+            <h2 className="text-white text-5xl pl-5 lg:pl-0 mt-60 pt-10 lg:pt-0 mb-20 flex items-center sm:align:left align-center justify-center h-full">
               Enter location to get started
             </h2>
           )}
