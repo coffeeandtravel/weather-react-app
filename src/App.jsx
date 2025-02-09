@@ -86,7 +86,7 @@ function App() {
       <div className="h-screen w-screen">
         {/* Navbar */}
         <div className="flex justify-center">
-          <div className="h-16 w-50 lg:w-300 navbar items-center justify-between flex flex-row rounded-full mt-7">
+          <div className="h-16 w-90 lg:w-300 navbar items-center justify-between flex flex-row rounded-full mt-7">
             <a className="items-center flex flex-row" href="#">
               <img src={Cloud} alt="" className=" ml-5 mx-2" />
               <h1 className="text-2xl mx-2 text-white" href="#">
