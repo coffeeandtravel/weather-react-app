@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Hover from "./assets/Hover";
 import SearchIcon from "./assets/Search.svg"
+import Cross from "./assets/cross.svg"
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 // console.log(API_KEY);
@@ -195,7 +196,8 @@ function App() {
             initial={{ scale: 1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src={SearchIcon} alt="Search" className="h-6 w-6" />
+            {isSearchOpen ? (<img src={Cross} alt="Search" className="h-6 w-6" />):(<img src={SearchIcon} alt="Search" className="h-6 w-6" />)}
+            {/* <img src={SearchIcon} alt="Search" className="h-6 w-6" /> */}
           </motion.button>
         </div>
       {/* <Tempfile/> */}
